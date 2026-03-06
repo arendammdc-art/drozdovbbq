@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drozdov Smokers</title>
+
+<title>DrozdovBBQ — Смокеры на заказ</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,21 +13,21 @@
 
 <body>
 
-<section class="hero">
-<div class="hero-content">
+<header class="hero">
 
-<h1>Смокеры на заказ</h1>
+<h1>DrozdovBBQ</h1>
 
 <p>
-Ручная работа.  
-4 недели изготовления.  
-Средняя стоимость — 180 000 ₽
+Смокеры на заказ.<br>
+Ручная работа.<br>
+Средняя стоимость — 180 000 ₽<br>
+Срок изготовления — 4 недели
 </p>
 
-<a href="#contact" class="button">Оставить заявку</a>
+<a href="#form" class="button">Оставить заявку</a>
 
-</div>
-</section>
+</header>
+
 
 <section class="features">
 
@@ -39,11 +40,11 @@
 </div>
 
 <div class="feature">
-Равномерная тяга без «мертвых зон»
+Правильная тяга
 </div>
 
 <div class="feature">
-Индивидуальная конфигурация
+Равномерная температура
 </div>
 
 <div class="feature">
@@ -54,25 +55,43 @@
 
 </section>
 
-<section class="contact" id="contact">
+
+<section id="form" class="form-section">
 
 <h2>Оставить заявку</h2>
 
-<form>
+<form action="https://formspree.io/f/YOURCODE" method="POST">
 
-<input type="text" placeholder="Ваше имя" required>
+<input type="text" name="name" placeholder="Ваше имя" required>
 
-<input type="tel" placeholder="Телефон">
+<input type="email" name="email" placeholder="Email" required>
 
-<textarea placeholder="Какой смокер хотели бы заказать?"></textarea>
+<textarea name="message" placeholder="Какой смокер вам нужен?"></textarea>
 
-<button type="submit">
-Отправить
-</button>
+<button type="submit">Отправить заявку</button>
 
 </form>
 
 </section>
+
+
+<footer>
+
+<div class="social">
+
+<a href="https://t.me/DrozdovBBQ" target="_blank">
+<img src="images/telegram.png" alt="Telegram">
+</a>
+
+<a href="https://www.youtube.com/@drozdovbbq7942" target="_blank">
+<img src="images/youtube.png" alt="YouTube">
+</a>
+
+</div>
+
+<p>© DrozdovBBQ</p>
+
+</footer>
 
 </body>
 </html>
