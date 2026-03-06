@@ -1,27 +1,125 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
 }
 
-.hero {
-  height: 100vh;
-  background: url("images/smoker-hero.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+url("images/smoker.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
+.hero-content{
+max-width:700px;
+padding:40px;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
+h1{
+font-size:64px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:14px 32px;
+background:#ff6a00;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+transition:0.2s;
+}
+
+.button:hover{
+background:#ff8126;
+}
+
+/* FEATURES */
+
+.features{
+padding:100px 20px;
+text-align:center;
+background:#151515;
+}
+
+.features h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.feature{
+background:#1f1f1f;
+padding:30px;
+border-radius:10px;
+font-size:18px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:100px 20px;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:30px;
+}
+
+form{
+max-width:450px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:14px;
+border-radius:8px;
+border:none;
+font-size:16px;
+}
+
+textarea{
+min-height:120px;
+}
+
+button{
+padding:14px;
+border:none;
+background:#ff6a00;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff8126;
 }
